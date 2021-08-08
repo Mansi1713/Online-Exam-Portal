@@ -1,0 +1,30 @@
+create table exam_student(
+studId number primary key,
+fname varchar2(80),
+lname varchar2(80),
+city varchar2(80),
+state varchar2(80),
+gender varchar2(80),
+dob date,
+stud_photo blob,
+email varchar2(100),
+mobno varchar2(10),
+password varchar2(20)
+)
+
+Part photo=request.getparametr("p[hoto");
+ps.setBinaryStream(2,photo.getInputStream(),(int)photo.getSize());
+rs.getBlob();
+
+create table exam_faculty(
+facId number primary key,
+fname varchar2(80),
+lname varchar2(80),
+education varchar2(80),
+gender varchar2(80),
+dob date,
+stud_photo blob,
+email varchar2(100),
+mobno varchar2(10),
+password varchar2(20)
+)
